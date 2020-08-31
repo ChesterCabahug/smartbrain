@@ -5,8 +5,7 @@ import ImageLinkForm from "./components/ImageLinkForm/ImageLinkForm";
 import Rank from "./components/Rank/Rank";
 import "./App.css";
 import "tachyons";
-import Particles from 'react-particles-js';
-
+import Particles from "react-particles-js";
 
 const particlesOptions = {
     particles: {
@@ -14,19 +13,16 @@ const particlesOptions = {
             value: 40,
             density: {
                 enable: true,
-                value_area: 800
-            }
-        }
-    }
-}
+                value_area: 800,
+            },
+        },
+    },
+};
 
 function App() {
     return (
         <div className="App">
-            <Particles
-                className="particles"
-                params={particlesOptions}
-            />
+            <Particles className="particles" params={particlesOptions} />
             <Navigation />
             <Logo />
             <Rank />
